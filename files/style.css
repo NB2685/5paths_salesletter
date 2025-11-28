@@ -465,7 +465,7 @@ h3 {
 }
 
 /* ==========================================
-   お客様の声
+   お客様の声（1枚画像・レスポンシブ最適化）
    ========================================== */
 .section-testimonials {
     padding: 60px 40px;
@@ -474,33 +474,36 @@ h3 {
 
 .section-testimonials h2 {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 30px;
 }
 
 .testimonial-item {
-    background: #E0E0E0;
-    border-radius: 8px;
+    width: 100%;
     overflow: hidden;
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 8px;
+}
+
+/* 画像のアスペクト比を維持しながら幅いっぱいに表示 */
+.testimonial-item picture {
+    display: block;
+    width: 100%;
 }
 
 .testimonial-img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    display: block;
 }
 
 .testimonial-link {
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .testimonial-link a {
@@ -513,6 +516,55 @@ h3 {
 .testimonial-link a:hover {
     color: #A00000;
 }
+
+/* ==========================================
+   レスポンシブ対応（タブレット）
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .section-testimonials {
+        padding: 50px 20px;
+    }
+    
+    .testimonial-grid {
+        width: 100%;
+    }
+    
+    .testimonial-item {
+        border-radius: 4px;
+    }
+}
+
+/* ==========================================
+   レスポンシブ対応（スマホ）
+   ========================================== */
+@media screen and (max-width: 480px) {
+    .section-testimonials {
+        padding: 40px 0;
+    }
+    
+    .testimonial-grid {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .testimonial-item {
+        border-radius: 0;
+    }
+    
+    .testimonial-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .testimonial-link {
+        padding: 0 20px;
+    }
+    
+    .testimonial-link a {
+        font-size: 16px;
+    }
+}
+
 
 /* ==========================================
    フッター
