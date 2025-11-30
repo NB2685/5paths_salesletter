@@ -185,28 +185,44 @@ h3 {
     color: #b41801;
     line-height: 1.6;
     text-shadow: 2px 4px 15px rgba(0,0,0,0.3);
-    font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', '游ゴシック', 'YuGothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
+    font-family: 'ヒラギノ角ゴ ProN W8', 'Hiragino Kaku Gothic ProN', '游ゴシック', 'YuGothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
     /*font-family: "ヒラギノ角ゴ StdN W8", "Hiragino Kaku Gothic StdN", sans-serif;*/
 }
 
-/*.headline-sub {
-    font-size: 32px;
-    font-weight: bold;
-    color: #D80000;
+.headline-sub {
+    margin-top: 0px;
+    font-size: clamp(15px, 4vw, 28px);
+    font-weight: 900;
+    color: #000;
     line-height: 1.5;
     margin-bottom: 0.5em;
-    font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', '游ゴシック', 'YuGothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
+    font-family: 'ヒラギノ角ゴ ProN W8', 'Hiragino Kaku Gothic ProN', '游ゴシック', 'YuGothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
     /*font-family: "ヒラギノ角ゴ StdN W8", "Hiragino Kaku Gothic StdN", sans-serif;*/
-/*}
+}
 
 .headline-sub2 {
-    font-size: 24px;
-    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: clamp(13px, 3.9vw, 28.5px);
+    font-weight: 900;
     color: #000000;
     line-height: 1.5;
-    font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', '游ゴシック', 'YuGothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
+    font-family: 'ヒラギノ角ゴ ProN W8', 'Hiragino Kaku Gothic ProN', '游ゴシック', 'YuGothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
     /*font-family: "ヒラギノ角ゴ StdN W8", "Hiragino Kaku Gothic StdN", sans-serif;*/
-/*}*/
+}
+
+.highlight-1 {
+  background-color: transparent; 
+  background-image: linear-gradient(
+    transparent 50%, 
+    #fef057 50%
+  ); 
+  background-size: 100% 2.7em; 
+  padding-bottom: 12px;
+  background-position: center bottom; 
+  background-repeat: no-repeat; 
+  display: inline;
+}
 
 
 .from-text,
@@ -217,6 +233,10 @@ h3 {
     color: #333333;
     margin-bottom: 0.5em;
 }
+
+    .audio-intro {
+        font-size: 22px;
+    }
 
 .emphasis-text {
     font-weight: bold;
@@ -621,16 +641,6 @@ h3 {
         font-size: 20px;
     }
 
-
-
-    .headline-sub {
-        font-size: 26px;
-    }
-
-    .headline-sub2 {
-        font-size: 20px;
-    }
-
     .price-value {
         font-size: 48px;
     }
@@ -664,19 +674,20 @@ h3 {
         padding: 10px 20px;
     }
 
+.highlight-1 {
+  background-size: 100% 4em; 
+  padding-bottom: 7px;
+}
+
     /* ヘッドライン調整 */
     .headline-main {
         line-height: 1.5;
     }
 
     .headline-sub {
-        font-size: 22px;
         line-height: 1.5;
     }
 
-    .headline-sub2 {
-        font-size: 18px;
-    }
 
     h2 {
         line-height: 1.6;
@@ -711,7 +722,7 @@ h3 {
     }
 
     .audio-intro {
-        font-size: clamp(11px, 3.1vw, 16px);
+        font-size: clamp(11px, 3.5vw, 16px);
     }
 
     #audioPlayer {
@@ -818,9 +829,6 @@ h3 {
    ========================================== */
 @media screen and (max-width: 360px) {
 
-    .headline-sub {
-        font-size: 20px;
-    }
 
     .price-value {
         font-size: 36px;
