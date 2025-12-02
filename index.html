@@ -1760,7 +1760,11 @@
 
         <!-- 追伸セクション -->
         <div class="section section-ps">
-            <p class="ps-title">仙人さん</p>
+            <!--p class="ps-title">仙人さん</p-->
+        <picture>
+            <source srcset="files/senninsan.webp" type="image/webp">
+            <img src="files/senninsan.png" alt="仙人さん">
+        </picture>
         </div>
 
         <div class="section section62">
@@ -1848,7 +1852,7 @@
             <p style="font-weight:bold">仙人さんの元に届けられたファンからの手紙…</p>
 <div class="testimonial-grid">
     <div class="testimonial-item">
-<a href="#" target="_blank">
+<a href="javascript:void(0);" id="openVoicePage">
         <picture>
             <source srcset="files/okyakusamakoe.webp" type="image/webp">
             <img src="files/okyakusamakoe.png" alt="お客様の声" class="testimonial-img" loading="lazy">
@@ -1871,5 +1875,31 @@
   </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. IDで要素を取得
+    const openButton = document.getElementById('openVoicePage');
+    
+    // 【重要】開きたい「声ページ」のURLをここに設定してください
+    const voicePageUrl = 'https://xtribe.me'; 
+
+    if (openButton) {
+        // 2. クリックイベントを設定
+        openButton.addEventListener('click', function(event) {
+            // ページ遷移を防ぐ（HTMLの href="javascript:void(0);" で防げない場合のため）
+            event.preventDefault(); 
+            
+            const windowName = 'VoicePagePopup'; // ウィンドウの名前
+            
+            // 開くウィンドウのサイズと設定
+            // width=500, height=600 の小さなウィンドウを設定
+            const features = 'width=500,height=600,scrollbars=yes,resizable=yes,toolbar=no,location=no';
+            
+            // 3. window.open() を実行
+            window.open(voicePageUrl, windowName, features);
+        });
+    }
+});
+</script>
 </body>
 </html>
