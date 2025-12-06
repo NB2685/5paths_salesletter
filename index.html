@@ -1869,33 +1869,31 @@
 <div id="footer">
   <div id="ftnav" style="display:block;">
     <ul>
-      <li><a href="tokusho.html" target="_blank">特定商取引法</a></li>
-      <li><a href="privacy.html" target="_blank">プライバシーポリシー</a></li>
+      <li><a href="tokusho.html" target="_blank">特定商取引法</a></li>｜　<li><a href="privacy.html" target="_blank">プライバシーポリシー</a></li>
     </ul>
   </div>
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. IDで要素を取得
+    // 要素を取得
     const openButton = document.getElementById('openVoicePage');
     
-    // 【重要】開きたい「声ページ」のURLをここに設定してください
-    const voicePageUrl = 'https://xtribe.me'; 
+    // 「声」URL
+    const voicePageUrl = 'https://xtribe.me/5paths/koe/'; 
 
     if (openButton) {
-        // 2. クリックイベントを設定
+        // クリックイベント設定
         openButton.addEventListener('click', function(event) {
-            // ページ遷移を防ぐ（HTMLの href="javascript:void(0);" で防げない場合のため）
             event.preventDefault(); 
             
             const windowName = 'VoicePagePopup'; // ウィンドウの名前
             
             // 開くウィンドウのサイズと設定
-            // width=500, height=600 の小さなウィンドウを設定
+            // width=500, height=600 
             const features = 'width=500,height=600,scrollbars=yes,resizable=yes,toolbar=no,location=no';
             
-            // 3. window.open() を実行
+            // window.open() 実行
             window.open(voicePageUrl, windowName, features);
         });
     }
