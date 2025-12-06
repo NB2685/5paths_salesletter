@@ -1,0 +1,770 @@
+
+@charset "UTF-8";
+
+
+*{
+margin: 0;
+padding:0;
+}
+
+
+html {
+font-family: sans-serif;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+img {
+display:block;
+}
+
+a img {
+    border-style:none;
+}
+
+
+
+ul, li{
+list-style:none;
+}
+
+a{
+text-decoration:none;
+}
+
+
+.imgs img{
+display:inline;
+}
+
+hr{
+width:45px;
+height: 1px;
+background: #000;
+border: 0;
+}
+
+
+
+
+body {
+color: #000000;
+font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+font-size: 18px;
+background: black;
+line-height:150%;
+}
+
+
+h1, h2 {
+  color: #B51700
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "ヒラギノ角ゴ StdN W8", "Hiragino Kaku Gothic StdN", "HGP創英角ｺﾞｼｯｸUB", "HGPSoeiKakugothicUB", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  text-align:center;
+  padding-top: 80px;
+}
+
+h2 {
+  font-size: 70px;
+  font-family: "ヒラギノ角ゴ StdN W8", "Hiragino Kaku Gothic StdN", "HGP創英角ｺﾞｼｯｸUB", "HGPSoeiKakugothicUB", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  text-align:center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+
+
+p{
+font-size: 18.8px;
+line-height:155%;
+}
+
+
+/* ==========================================
+   改行制御
+   ========================================== */
+.sp-only {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    /* スマホ用改行表示 */
+    .sp-only {
+        display: inline;
+    }
+}
+
+/* ========================================== */
+
+#audio {
+   margin: 10px;
+}
+
+.text_center{
+text-align:center;
+}
+
+.text_right{
+text-align:right;
+}
+
+
+.text_line{
+text-decoration:underline;
+}
+
+
+
+.sub_title{
+font-weight: bold;
+color: #D80000;
+font-size: 31pt;
+font-family: "ヒラギノ角ゴ StdN W8","HGP創英角ｺﾞｼｯｸUB","Hiragino Kaku Gothic StdN","HGPSoeiKakugothicUB","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+text-shadow: 2px 4px 15px rgba(0,0,0,0.3);
+line-height:150%;
+position: relative;
+}
+
+.sub_title02{
+font-weight: bold;
+color: #D80000;
+font-size: 31pt;
+font-family: "ヒラギノ角ゴ StdN W8","HGP創英角ｺﾞｼｯｸUB","Hiragino Kaku Gothic StdN","HGPSoeiKakugothicUB","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+line-height:150%;
+}
+
+.sub_title03{
+font-weight: bold;
+color: #D80000;
+font-size: 24pt;
+font-family: "ヒラギノ角ゴ StdN W8","HGP創英角ｺﾞｼｯｸUB","Hiragino Kaku Gothic StdN","HGPSoeiKakugothicUB","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+line-height:150%;
+text-shadow: 5px 4px 2px rgba(0,0,0,0.2);
+}
+
+
+.text_sha{
+text-shadow: 2px 4px 15px rgba(0,0,0,0.3);
+}
+
+.font_goshikku{
+font-family: "Hiragino Kaku Gothic StdN", "ヒラギノ角ゴ StdN W8","HGP創英角ｺﾞｼｯｸUB","Hiragino Kaku Gothic StdN","HGPSoeiKakugothicUB","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+
+
+.red{
+color: #D80000;
+}
+
+
+.blue{
+color: #036EB8;
+}
+
+.back_yellow{
+background:#FFF900;
+}
+
+
+.text_bold{
+font-weight:bold;
+}
+
+
+
+#wrapper{
+width:100%;
+}
+
+.wrapper_inner{
+margin: 50px auto 80px;
+width:791px;
+background:#fff;
+}
+
+.finary {
+color: #d90800;
+font-family: "Hiragino Kaku Gothic StdN", "ヒラギノ角ゴ StdN W8",sans-serif;
+font-size: 37px;
+margin: 0 auto 26px;
+padding: 37px 0 0;
+text-align: center;
+}
+
+
+
+.form_section{
+padding:0 150px 0px;
+}
+
+.section{
+padding:0 77px 0px;
+}
+
+
+
+
+#recommend_page .profile_title{
+font-family: "Hiragino Kaku Gothic StdN", "ヒラギノ角ゴ StdN W8","HGP創英角ｺﾞｼｯｸUB","Hiragino Kaku Gothic StdN","HGPSoeiKakugothicUB","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+font-size:25px;
+text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+#recommend_page .profile_name{
+font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+font-size:16px;
+font-weight:bold;
+padding-top:10px;
+}
+
+
+#recommend_page p{
+font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+font-size:16px;
+}
+
+
+#recommend_page .reco_section_profile{
+overflow:hidden;
+margin:20px 0;
+}
+
+
+.reco_section_profile_left{
+float:left;
+width:160px;
+}
+
+.reco_section_profile_right{
+float:left;
+width:360px;
+}
+
+
+
+.reco_section{
+padding: 30px 0px 0;
+}
+
+
+/* 旧reco_section設定（コメントアウト）
+.reco_section_top{
+    background: url("reco_section_top_bg.jpg") no-repeat top center;
+    padding: 85px 0px 0;
+}
+
+.reco_section_inner{
+    background: url("reco_section_inner_bg.jpg") repeat top center;
+    padding: 0px 130px;
+}
+
+.reco_section_bottom{
+    background: url("reco_section_bottom_bg.jpg") no-repeat top center;
+    height:92px;
+}
+*/
+
+
+
+
+
+
+
+
+
+#footer {
+  font-size: 75%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 0 50px;
+  text-align: center;
+}
+#ftnav {
+  position: relative;
+}
+#ftnav ul {
+  float: left;
+  left: 50%;
+  position: relative;
+}
+#ftnav li {
+  float: left;
+  left: -50%;
+  margin-right: 10px;
+  position: relative;
+}
+#ftnav a {
+  color: #009eff;
+}
+#ftnav a::after {
+  content: "|";
+  color: #fff;
+  margin-left: 10px;
+}
+#ftnav li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+#ftnav li:nth-last-of-type(1) a::after {
+  content: "";
+  display: none;
+  margin-left: 0;
+
+}
+
+
+
+.center{
+  margin: 0 auto;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 130px;
+}
+
+
+@media screen and (max-width: 768px) {
+.op2{margin-top: 0px}
+
+}
+
+.op2{margin-top: 0px;}
+
+
+    @media screen and (max-width: 767px) {
+}
+
+
+
+.gothic{
+ font-family: "Toppan Bunkyu Midashi Gothic", "ヒラギノ角ゴ StdN W3", "Hiragino Kaku Gothic StdN", "HGP創英角ｺﾞｼｯｸUB", "HGPSoeiKakugothicUB", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+ font-weight: bold;
+}
+
+
+.mincho{
+ font-family: "Toppan Bunkyu Midashi Gothic", "ヒラギノ角ゴ StdN W3", "Hiragino Kaku Gothic StdN", "HGP創英角ｺﾞｼｯｸUB", "HGPSoeiKakugothicUB", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+.red {
+  color: #cf232b!important;
+}
+
+.kaku_bold {
+  font-family: "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.lh150 {
+  line-height:150%;
+}
+
+
+.center{
+  margin:0 auto;
+  text-align:center;
+  font-family: "Toppan Bunkyu Midashi Gothic", "ヒラギノ角ゴ StdN W3", "Hiragino Kaku Gothic StdN", "HGP創英角ｺﾞｼｯｸUB", "HGPSoeiKakugothicUB", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    /* 全体の設定を改善 */
+    body {
+        font-size: 18px; /* ベースフォントを16pxから18pxに拡大 */
+        line-height: 180%; /* 行間を広げて読みやすく */
+    }
+
+    /* ラッパーの調整 */
+    .wrapper_inner {
+        width: 95%; 
+        margin: 20px auto 8px;
+        padding: 0; 
+        background: white; /* 背景色の指定を維持 */
+    }
+
+    /* 見出しの調整 */
+    h1 {
+        font-size: 40px; /* 36pxから40pxに拡大 */
+        padding-top: 30px;
+    }
+
+    h2 {
+        font-size: 34px; /* 32pxから34pxに拡大 */
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    /* 本文（pタグ）の調整 */
+    p {
+        font-size: 16px; /* 16pxから18pxに拡大 */
+        line-height: 155%; /* 行間をさらに広げる */
+    }
+
+    /* セクションのパディング調整 */
+    .section {
+        padding: 0 15px 0px; 
+    }
+    
+    /* reco_sectionのパディングをリセットし、内側で調整する */
+    .reco_section {
+        padding: 0; 
+    }
+
+    /* サブタイトル(タイトル名)の調整 */
+    .sub_title, .sub_title02 {
+        font-size: 22pt; /* 20ptから22ptに拡大 */
+        line-height: 150%;
+    }
+    .sub_title03 {
+        font-size: 18pt; /* 16ptから18ptに拡大 */
+        line-height: 150%;
+    }
+
+    /* お客様の声のセクション装飾を削除 */
+    .reco_section_top,
+    .reco_section_bottom {
+        display: none; 
+        height: 0;
+    }
+
+    .reco_section_inner {
+        background: none; 
+        padding: 15px 10px; /* 左右パディングを10pxに微調整 */
+    }
+
+    /* プロフィール情報のレイアウト変更 (縦積み) */
+    .reco_section_profile {
+        overflow: visible; 
+        margin: 15px 0; /* マージンを増やして見やすく */
+    }
+
+    .reco_section_profile_left,
+    .reco_section_profile_right {
+        float: none; 
+        width: 100%; 
+        text-align: left; 
+    }
+
+    .reco_section_profile_left img {
+        margin: 0 0 10px 0; 
+    }
+
+    .profile_title {
+        font-size: 20px; /* 18pxから20pxに拡大 */
+        line-height: 150%;
+        text-shadow: none; 
+        text-align: left; 
+        
+        white-space: normal; 
+        word-break: break-word;
+        overflow-x: hidden;
+    }
+
+    .profile_name {
+        font-size: 16px; /* 14pxから16pxに拡大 */
+        padding-top: 5px;
+        text-align: left; 
+    }
+    
+    /* セクション内の本文の調整 */
+    .reco_section_inner p {
+        text-align: left; 
+    }
+
+    /* 段落間のマージン調整 */
+    .reco_section p {
+        margin-bottom: 20px; /* 段落間をさらに広げる */
+    }
+
+    /* その他の要素調整 */
+    .center {
+        margin-bottom: 50px;
+    }
+
+    .finary {
+        font-size: 26px; /* 24pxから26pxに拡大 */
+        padding: 20px 0 0;
+        margin-bottom: 15px;
+    }
+
+    /* 以下の記述は既に存在し、`wrapper_inner`に統合されているため削除可能ですが、念のため残しました */
+    /*.wrapper_inner{
+    　background:#FFF900;
+    }*/
+}
+
+
+
+
+
+
+
+/* =====================================================
+   完璧なレスポンシブ対応修正 - 最終版 2025/12/06
+===================================================== */
+
+/* =====================================================
+   1. PC表示 - 枠画像を確実に表示
+===================================================== */
+
+.reco_section_top {
+    background: url("reco_section_top_bg.jpg") no-repeat top center;
+    background-size: 100% auto;
+    padding: 40px 0px 0;
+    min-height: 50px;
+}
+
+.reco_section_inner {
+    background: url("reco_section_inner_bg.jpg") repeat-y top center;
+    background-size: 100% auto;
+    padding: 0px 130px;
+}
+
+.reco_section_bottom {
+    background: url("reco_section_bottom_bg.jpg") no-repeat top center;
+    background-size: 100% auto;
+    min-height: 92px;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+/* sub_title03追加後も背景画像が表示されるように */
+.reco_section_bottom * {
+    position: relative;
+    z-index: 1;
+}
+
+/* =====================================================
+   2. PC表示 - 読みやすい大きめ文字サイズ
+===================================================== */
+
+/* メインタイトル - PC */
+.main_title,
+#recommend_page .profile_title {
+    font-size: 25px;
+    line-height: 1.5;
+    word-break: keep-all;
+    margin-bottom: 25px;
+}
+
+/* サブタイトル01/02 - PC */
+.sub_title01, .sub_title02 {
+    font-size: 28px;
+    line-height: 1.7;
+    word-break: keep-all;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 0;
+}
+
+/* サブタイトル03 - PC（新規追加分）*/
+.sub_title03 {
+    font-size: 24px!important;
+    line-height: 1.9;
+    word-break: keep-all;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
+
+/* 本文テキスト - PC */
+#recommend_page p,
+.text01, .text02, .text03 {
+    font-size: 16px;
+    word-break: keep-all;
+}
+
+/* プロフィール名 - PC */
+#recommend_page .profile_name {
+    font-size: 16px;
+}
+
+/* =====================================================
+   3. タブレット（769px〜1024px）
+===================================================== */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .reco_section_inner {
+        padding: 0px 130px;
+    }
+
+    .main_title,
+    #recommend_page .profile_title {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    .sub_title01, .sub_title02 {
+        font-size: 24px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .sub_title03 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    #recommend_page p,
+    .text01, .text02, .text03 {
+        font-size: 18px;
+    }
+}
+
+/* =====================================================
+   4. スマホ表示（768px以下）- 枠画像非表示＋大きめ文字
+===================================================== */
+
+@media screen and (max-width: 768px) {
+
+    .sub_title03 {
+        font-size: 18pt!important; /* 16ptから18ptに拡大 */
+        line-height: 150%;
+    }
+
+    /* 枠画像をスマホでは完全に非表示 */
+    .reco_section_top {
+        background-image: none;
+        background: none;
+        padding: 25px 15px 10px;
+        min-height: auto;
+    }
+
+    .reco_section_inner {
+        background-image: none;
+        background: none;
+        padding: 15px 20px;
+    }
+
+    .reco_section_bottom {
+        background-image: none;
+        background: none;
+        height: auto;
+        min-height: auto;
+        padding: 15px 20px 25px;
+    }
+
+    /* スマホでの文字サイズ - 大きく読みやすく */
+    .main_title,
+    #recommend_page .profile_title {
+        font-size: 26px;
+        line-height: 1.6;
+        padding: 0 5px;
+        margin-bottom: 20px;
+    }
+
+    .sub_title01, .sub_title02 {
+        font-size: 22px;
+        line-height: 1.8;
+        padding: 0 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .sub_title03 {
+        font-size: 20px;
+        line-height: 1.9;
+        padding: 0 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* 本文テキスト - スマホで読みやすく */
+    #recommend_page p,
+    .text01, .text02, .text03 {
+        font-size: clamp(13px, 3.5vw, 16px);
+        line-height: 2.0;
+        padding: 0 5px;
+    }
+
+    /* プロフィール名 */
+    #recommend_page .profile_name {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* reco_sectionの余白調整 */
+    .reco_section {
+        padding: 10px 5px;
+        margin: 0;
+    }
+
+    /* 画像サイズ調整 */
+    .reco_section_profile_left {
+        width: 120px;
+    }
+
+    .reco_section_profile_left img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* =====================================================
+   5. 超小型スマホ（480px以下）
+===================================================== */
+
+@media screen and (max-width: 480px) {
+
+    .main_title,
+    #recommend_page .profile_title {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .sub_title01, .sub_title02 {
+        font-size: 24px;
+        line-height: 1.8;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+
+    .sub_title03 {
+        font-size: 24px;
+        line-height: 1.9;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    #recommend_page p,
+    .text01, .text02, .text03 {
+        line-height: 2.0;
+    }
+
+    .reco_section_inner {
+        padding: 10px 15px;
+    }
+
+    .reco_section_profile_left {
+        width: 100px;
+    }
+}
+
+/* =====================================================
+   6. 改行の最適化
+===================================================== */
+
+/* 全体の改行制御 */
+.main_title,
+.sub_title01,
+.sub_title02,
+.sub_title03,
+#recommend_page p {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+/* brタグの余白 */
+.sub_title01 br,
+.sub_title02 br,
+.sub_title03 br {
+    display: block;
+    content: "";
+    margin-top: 8px;
+}
+
